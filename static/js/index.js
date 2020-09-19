@@ -43,7 +43,7 @@ function initializeClock(id, endtime) {
 	var timeinterval = setInterval(updateClock, 1000);
 }
 
-var deadline = new Date(2020, 09, 1, 12, 0, 0, 0);
+var deadline = new Date(2020, 09, 24, 23, 0, 0, 0);
 console.log(deadline);
 initializeClock('clockdiv', deadline);
 
@@ -64,27 +64,6 @@ document.getElementById("overlay-screen").addEventListener("click", function () 
 })
 
 
-// Preparing SMTP mail sending
-
-function sendEmail() {
-	Email.send({
-		Host: "smtp.gmail.com",
-		Username: "sender@email_address.com",
-		Password: "Enter your password",
-		To: 'receiver@email_address.com',
-		From: "sender@email_address.com",
-		Subject: "Sending Email using javascript",
-		Body: "Well that was easy!!",
-		Attachments: [
-			{
-				name: "File_Name_with_Extension",
-				path: "Full Path of the file"
-			}]
-	})
-		.then(function (message) {
-			alert("Mail has been sent successfully")
-		});
-}
 
 // https://www.youtube.com/watch?v=V388-fC0qB8
 
