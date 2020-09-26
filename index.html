@@ -7,6 +7,9 @@
 
 	<meta name="google-site-verification" content="6bMYPaGXX0fCjIIKfyFpYN__Y8EJwJF0Ty5dPbvxd6M" />
 	<!-- Google Search verification meta tag -->
+	<meta name="description"
+		content="Now everyone can be a coder. Codastra is a coding teching platform that empowers people of all age to not only learn but implement and make real life projects that they can be proud of.">
+
 
 	<link rel='icon' href='static/img/favicon.ico' type='image/x-icon'>
 
@@ -30,7 +33,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!-- Adding CDN based Font Awesome File for icons -->
 
-	<title>CodAstra</title>
+	<title>CodAstra - Coding for Everyone</title>
 </head>
 
 <body>
@@ -40,7 +43,7 @@
 		<section class="header-container">
 			<div class="logo-container">
 				<a href="/" class="">
-					<img src="static/img/Logo.png" alt="LOGO" class="logo-img">
+					<img src="static/img/Logo.png" alt="Codastra Coding for Everyone" class="logo-img">
 				</a>
 			</div>
 
@@ -110,10 +113,11 @@
 					</div>
 					<div class="column">
 						<div class="work-gif-container">
-							<img src="static/img/Work.gif" alt="Upwards and Onwards" class="work-gif">
+							<img src="static/img/Work.gif" alt="Learn Coding Java and C++ with codastra, become a developer" class="work-gif">
 							<div class="subtitle construction-text-container">
-								<span>Our Website is under construction. Stay Tuned! Bringing the most innovative experience
-								in education sector.</span>
+								<span>Our Website is under construction. Stay Tuned! Bringing the most innovative
+									experience
+									in education sector.</span>
 							</div>
 						</div>
 					</div>
@@ -166,10 +170,14 @@
 		<section class="hero">
 			<div class="hero-body has-text-centered">
 				<div class="about-us-container">
-					<p> <span>"</span> CodAstra, a movement spearheaded by IIT Bombay Engineers to empower Bharat with the <strong>“अस्त्र”</strong> of technology to regain
-						the “Vishwaguru” status. Our mission is to continuously innovate the best techniques of empowering the next generation of software
-						developers with the best tools and  scale up their skills, employability and make them ready  as forerunners for the ever blooming
-						software industry . We believe in the philosophy of “Never ending journey of self upgradation”<span>"</span></p>
+					<p> <span>"</span> CodAstra, a movement spearheaded by IIT Bombay Engineers to empower Bharat with
+						the <strong>“अस्त्र”</strong> of technology to regain
+						the “Vishwaguru” status. Our mission is to continuously innovate the best techniques of
+						empowering the next generation of software
+						developers with the best tools and scale up their skills, employability and make them ready as
+						forerunners for the ever blooming
+						software industry . We believe in the philosophy of “Never ending journey of self
+						upgradation”<span>"</span></p>
 				</div>
 			</div>
 		</section>
@@ -207,7 +215,7 @@
 				</div>
 				<div class="column">
 					<div class="school-img-container">
-						<img src="static/img/school.svg" alt="Upwards and Onwards" class="school-img">
+						<img src="static/img/school.svg" alt="School of Coding, learn to be a coder, coding classes" class="school-img">
 					</div>
 				</div>
 			</div>
@@ -218,7 +226,7 @@
 		<section class="hero">
 			<div class="hero-body has-text-centered">
 				<div>
-					<button onclick="OpenOverlay()"
+					<button onclick="overlayToggle()"
 						class="button is-rounded is-large get-notified-button">Register</button>
 				</div>
 			</div>
@@ -235,11 +243,8 @@
 	</div>
 
 
-	<div id="overlay-screen-container" class="is-overlay hide has-text-centered">
+	<!-- <div id="overlay-screen-container" class="is-overlay hide has-text-centered">
 		<div id="overlay-screen">
-			<!-- <div class="close-overlay-container">
-				<i class="fa fa-times fa-4x"></i>
-			</div> -->
 			<div class="box iframe-container">
 				<iframe
 					src="https://docs.google.com/forms/d/e/1FAIpQLSe2VGXxbp8G7Xzz7P6N_aWl7wgMdz8MO_cA-KsNht53uawTnw/viewform?embedded=true"
@@ -247,6 +252,25 @@
 					Loading…
 				</iframe>
 			</div>
+		</div>
+	</div> -->
+
+	<!-- ----------------------------Overlay Creation---------------------------- -->
+
+	<div id="overlay-container-id" class="overlay hide">
+		<div class="overlay-cross-container">
+			<span class="icon has-text-light">
+				<i class="fa fa-times fa-3x" onclick="overlayToggle()"></i>
+			</span>
+		</div>
+		<div class="box overlay-box-container">
+
+			<iframe
+				src="https://docs.google.com/forms/d/e/1FAIpQLSe2VGXxbp8G7Xzz7P6N_aWl7wgMdz8MO_cA-KsNht53uawTnw/viewform?embedded=true"
+				width="95%" height="90%" frameborder="0" marginheight="10px" marginwidth="10px">
+				Loading…
+			</iframe>
+
 		</div>
 	</div>
 

@@ -163,32 +163,44 @@
 	color: #ffffff;
 }
 
+.iframe-container {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+
 .hide {
 	display: none;
 }
 
-#overlay-screen-container {
-    background-color: rgba(0, 0, 0, 0.8);
-    position:fixed;
-    width:100%;
-    height:100%;
-    top:0px;
-    left:0px;
-    z-index:1000;
+.overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.8);
+	z-index: 2;
 }
 
-.overlay-screen {
-	/* background-color: rgba(0, 0, 0, 0.2); */
-}
-
-.iframe-container {
-	background-color: rgba(0, 0, 0, 0.1);
-	/* max-height: 80%;
-	vertical-align: middle;
-	overflow: scroll; */
-}
-
-/* .close-overlay-container {
-	right: 0px;
+.overlay-cross-container {
+	position: fixed;
+	top: 0;
+	right: 0;
+	margin-top: 3%;
+	margin-right: 3%;
 	cursor: pointer;
-} */
+}
+
+.overlay-box-container {
+	position: absolute;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	width: 50%;
+	height: 90%;
+}

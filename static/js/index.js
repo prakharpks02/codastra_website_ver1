@@ -50,20 +50,22 @@ initializeClock('clockdiv', deadline);
 
 // Opening Overlay for Register
 
-function OpenOverlay() {
-	console.log("Overlay Open");
-	document.getElementById("overlay-screen-container").classList.remove("hide");
+// function OpenOverlay() {
+// 	console.log("Overlay Open");
+// 	document.getElementById("overlay-screen-container").classList.remove("hide");
+// }
+
+// function CloseOverlay() {
+// 	document.getElementById("overlay-screen-container").classList.add("hide");
+// }
+
+// document.getElementById("overlay-screen").addEventListener("click", function () {
+// 	CloseOverlay();
+// })
+
+function overlayToggle(){
+	document.getElementById('overlay-container-id').classList.toggle('hide');
 }
-
-function CloseOverlay() {
-	document.getElementById("overlay-screen-container").classList.add("hide");
-}
-
-document.getElementById("overlay-screen").addEventListener("click", function () {
-	CloseOverlay();
-})
-
-
 
 // https://www.youtube.com/watch?v=V388-fC0qB8
 
