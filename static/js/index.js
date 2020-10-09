@@ -54,3 +54,7 @@ initializeClock('clockdiv', deadline);
 function overlayToggle(){
 	document.getElementById('overlay-container-id').classList.toggle('hide');
 }
+
+function GetNotified(){
+	document.getElementById('get-notified-error-id').classList.toggle('hide');
+}
