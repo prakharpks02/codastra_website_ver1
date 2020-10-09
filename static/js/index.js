@@ -43,32 +43,14 @@ function initializeClock(id, endtime) {
 	var timeinterval = setInterval(updateClock, 1000);
 }
 
-var deadline = new Date(2020, 09, 24, 23, 0, 0, 0);
+var deadline = new Date(2020, 10, 15, 23, 0, 0, 0);
 console.log(deadline);
 initializeClock('clockdiv', deadline);
 
 
 // Opening Overlay for Register
 
-// function OpenOverlay() {
-// 	console.log("Overlay Open");
-// 	document.getElementById("overlay-screen-container").classList.remove("hide");
-// }
-
-// function CloseOverlay() {
-// 	document.getElementById("overlay-screen-container").classList.add("hide");
-// }
-
-// document.getElementById("overlay-screen").addEventListener("click", function () {
-// 	CloseOverlay();
-// })
 
 function overlayToggle(){
 	document.getElementById('overlay-container-id').classList.toggle('hide');
 }
-
-// https://www.youtube.com/watch?v=V388-fC0qB8
-
-// https://www.youtube.com/watch?v=TtLZtKtNZ3M
-
-// 
